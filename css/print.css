@@ -1,0 +1,32 @@
+@page {
+  size: A4;
+  margin: 1.5cm;
+}
+
+@media print {
+
+  nav,
+  footer,
+  header,
+  button {
+    display: none !important;
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+    font-family: Arial;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  section,
+  article,
+  div {
+    page-break-inside: avoid;
+  }
+
+}
