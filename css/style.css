@@ -399,3 +399,12 @@ footer {
     }
 
 }
+
+/* ====================================
+   ESCONDER CAPA E SUMÁRIO NO SITE
+==================================== */
+
+.capa,
+.sumario {
+    display: none;
+}
