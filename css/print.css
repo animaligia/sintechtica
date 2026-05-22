@@ -15,7 +15,7 @@
   body {
     background: white !important;
     color: black !important;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
   }
 
   img {
@@ -27,9 +27,9 @@
   article,
   div {
     page-break-inside: avoid;
-    /* CAPA */
+  }
 
-.capa {
+  .capa {
     height: 100vh;
 
     display: flex;
@@ -43,41 +43,42 @@
     color: white;
 
     page-break-after: always;
-}
+  }
 
-.capa h1 {
+  .capa h1 {
     font-size: 42pt;
     margin-bottom: 20px;
-}
+  }
 
-.capa h2 {
+  .capa h2 {
     font-size: 24pt;
     margin-bottom: 15px;
-}
+  }
 
-/* SUMÁRIO */
+  .capa p {
+    font-size: 16pt;
+  }
 
-.sumario {
+  .sumario {
     padding: 60px;
     background: white;
 
     page-break-after: always;
-}
+  }
 
-.sumario h2 {
+  .sumario h2 {
     font-size: 28pt;
     margin-bottom: 30px;
-}
+  }
 
-.sumario ul {
+  .sumario ul {
     list-style: none;
     padding: 0;
-}
+  }
 
-.sumario li {
+  .sumario li {
     font-size: 16pt;
     margin-bottom: 15px;
-}
   }
 
 }
