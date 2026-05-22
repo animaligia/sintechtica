@@ -27,6 +27,57 @@
   article,
   div {
     page-break-inside: avoid;
+    /* CAPA */
+
+.capa {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background: #0b1220;
+    color: white;
+
+    page-break-after: always;
+}
+
+.capa h1 {
+    font-size: 42pt;
+    margin-bottom: 20px;
+}
+
+.capa h2 {
+    font-size: 24pt;
+    margin-bottom: 15px;
+}
+
+/* SUMÁRIO */
+
+.sumario {
+    padding: 60px;
+    background: white;
+
+    page-break-after: always;
+}
+
+.sumario h2 {
+    font-size: 28pt;
+    margin-bottom: 30px;
+}
+
+.sumario ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sumario li {
+    font-size: 16pt;
+    margin-bottom: 15px;
+}
   }
 
 }
