@@ -20,6 +20,14 @@
         font-family: Arial, sans-serif;
     }
 
+    .hero,
+.cta-final,
+.gradient-hero,
+.gradient-cta,
+.gradient-stats {
+    color: white !important;
+}
+
     nav,
     footer,
     button {
