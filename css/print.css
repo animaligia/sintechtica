@@ -1,101 +1,107 @@
 @page {
-  size: A4;
-  margin: 1.5cm;
+    size: A4;
+    margin: 1.5cm;
 }
 
 @media print {
 
-  nav,
-  footer,
-  header,
-  button {
-    display: none !important;
-  }
+    /* =========================
+       CONFIGURAÇÕES GERAIS
+    ========================= */
 
-  body {
-    background: white !important;
-    color: black !important;
-    font-family: Arial, sans-serif;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  section,
-  article,
-  div {
-    page-break-inside: avoid;
-  }
-
-  .capa {
-    height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-
-    background: #0b1220;
-    color: white;
-
-    page-break-after: always;
-  }
-
-  .capa h1 {
-    font-size: 42pt;
-    margin-bottom: 20px;
-  }
-
-  .capa h2 {
-    font-size: 24pt;
-    margin-bottom: 15px;
-  }
-
-  .capa p {
-    font-size: 16pt;
-  }
-
-  .sumario {
-    padding: 60px;
-    background: white;
-
-    page-break-after: always;
-  }
-
-  .sumario h2 {
-    font-size: 28pt;
-    margin-bottom: 30px;
-  }
-
-  .sumario ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  .sumario li {
-    font-size: 16pt;
-    margin-bottom: 15px;
-  }
-
-}
-
-/* ====================================
-   MOSTRAR APENAS NA IMPRESSÃO
-==================================== */
-
-@media print {
-
-    .capa,
-    .sumario {
-        display: flex !important;
+    body {
+        background: white !important;
+        color: black !important;
+        font-family: Arial, sans-serif;
     }
+
+    nav,
+    footer,
+    button {
+        display: none !important;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    section,
+    article,
+    div {
+        page-break-inside: avoid;
+    }
+
+    /* =========================
+       CAPA
+    ========================= */
+
+    .capa {
+        display: flex !important;
+
+        height: 100vh;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+
+        background: #0b1220 !important;
+        color: white !important;
+
+        page-break-after: always;
+    }
+
+    .capa h1 {
+        font-size: 42pt;
+        margin-bottom: 20px;
+    }
+
+    .capa h2 {
+        font-size: 24pt;
+        margin-bottom: 15px;
+    }
+
+    .capa p {
+        font-size: 18pt;
+    }
+
+    /* =========================
+       SUMÁRIO
+    ========================= */
 
     .sumario {
         display: block !important;
+
+        padding: 60px;
+
+        background: white !important;
+        color: black !important;
+
+        page-break-after: always;
     }
 
+    .sumario h2 {
+        font-size: 28pt;
+        margin-bottom: 30px;
+    }
+
+    .sumario ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .sumario li {
+        font-size: 16pt;
+        margin-bottom: 15px;
+    }
+
+    /* =========================
+       CONTEÚDO
+    ========================= */
+
+    .hero {
+        padding-top: 40px !important;
+    }
 }
