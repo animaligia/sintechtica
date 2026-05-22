@@ -572,5 +572,66 @@ footer {
     .nav-links {
         gap: 15px;
         font-size: 14px;
+    /* =========================
+   CAPA
+========================= */
+
+.capa {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #081120, #0f2b46);
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px;
+}
+
+.capa h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.capa h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.capa p {
+    font-size: 24px;
+}
+
+/* =========================
+   SUMÁRIO
+========================= */
+
+.sumario {
+    padding: 80px;
+
+    background: white;
+
+    color: #111;
+}
+
+.sumario h2 {
+    font-size: 42px;
+    margin-bottom: 30px;
+}
+
+.sumario ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sumario li {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
     }
 }
